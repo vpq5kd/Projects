@@ -1,0 +1,12 @@
+If you have your own key pair and would like to create a key file the format is as follows:
+-------------------------
+publickey modulus
+privatekey modulus
+-------------------------
+example:
+-------------------------
+38307433509 42463068511
+37838139917 42463068511
+
+NOTE: If you just want to encrypt, or just want to decrypt, you can put any random number in the publickey or privatekey spot,
+respectively. However, a number must be present in said spot for this program to work.

@@ -1,0 +1,33 @@
+Sophia Spaner's RSA Encryption Application!
+
+Executable Arguments:
+
+--help -> lists an abridged documentation and a list of arguments
+
+--getKeys -> returns two files, KeyFile & PersonalKeyFile in the Keys folder. KeyFile is formatted for use in this application, while PersonalKeyFile is formatted to be easily read for input into other programs.
+
+--getKeys --seeValues -> Does everything getKeys does as well as prints the P, Q, D, E, and N values that were used for key generation to system.out.
+
+--Encrypt -> starts the encryption program, it will prompt you for your message and keys.
+
+--Decrypt -> starts the decryption program, it will prompt you for your cipher text and keys.
+
+Documentation Arguments:
+
+--KeyFileFormat -> Shows documentation for creating your own key file and making it compatible with this application.
+
+General Information:
+
+1. Encryption or Decryption can be done with system.in (input) or with a .txt file.
+
+2. A best practice is to use --getKeys (or --getKeys --seeValues) first and then run the encryption/decryption service.
+
+3. If you have used --getKeys prior to running encryption/decryption, answer yes when asked if you have a key.
+
+4. Answering no to "do you have a key?" invokes --getKeys, so proceed as if that is the argument you ran if you move to a different service.
+
+5. Encryption spits out a list<BigInteger> as a string, where each number corresponds to a character that was encrypted.
+
+6. Decryption takes a string representation of a list<BigInteger> and spits out the decrypted message.
+
+7. If the format of the cipher text is incorrect, the program will restart.
